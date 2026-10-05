@@ -1,0 +1,92 @@
+/* CSS Custom Properties */
+:root {
+  /* Colors */
+  --primary-bg: #0f172a;
+  --secondary-bg: #1e293b;
+  --panel-bg: rgba(37, 41, 56, 0.6);
+  --accent-color: #7c3aed;
+  --accent-hover: #9333ea;
+  --text-primary: #f8f9fa;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --bbox-color: #10b981;
+  --bbox-hover: #34d399;
+  --class-color: #3b82f6;
+  --description-color: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.1);
+
+  /* Fonts */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Font rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+  color: var(--text-primary);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Buttons */
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Selection */
+::selection {
+  background: rgba(124, 58, 237, 0.3);
+  color: var(--text-primary);
+}
